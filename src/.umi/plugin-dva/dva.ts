@@ -6,6 +6,7 @@ import dva from 'dva';
 import createLoading from '/Users/jg/Desktop/itcast-react/node_modules/dva-loading/dist/index.esm.js';
 import { plugin, history } from '../core/umiExports';
 import ModelListData0 from '/Users/jg/Desktop/itcast-react/src/models/ListData.js';
+import ModelUserListData1 from '/Users/jg/Desktop/itcast-react/src/models/UserListData.js';
 
 let app:any = null;
 
@@ -29,6 +30,7 @@ export function _onCreate(options = {}) {
     app.use(plugin);
   });
   app.model({ namespace: 'ListData', ...ModelListData0 });
+app.model({ namespace: 'UserListData', ...ModelUserListData1 });
   return app;
 }
 

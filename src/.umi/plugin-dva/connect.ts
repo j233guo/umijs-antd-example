@@ -7,6 +7,7 @@ import { match } from 'react-router-dom';
 import { Location, LocationState, History } from 'history';
 
 export * from '/Users/jg/Desktop/itcast-react/src/models/ListData';
+export * from '/Users/jg/Desktop/itcast-react/src/models/UserListData';
 
 export interface Action<T = any> {
   type: T
